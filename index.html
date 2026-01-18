@@ -4,8 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechWave</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+
 </head>
-<body>
-    
+<body class="font-inter bg-purple">
+
+    <header class="navigation bg-purple px-5 py-[18px] md:py-[30px]">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="/index.html" class="w-[137px] md:w-[219px]"><img class="w-full" src="assets/logo.svg" alt="TechWave Logo"></a>
+
+            <nav>
+                <ul class="hidden md:flex gap-8 text-white font-medium">
+                    <li><a href="#" class="text-base">About</a></li>
+                    <li><a href="#" class="text-base">Episodes</a></li>
+                    <li><a href="#" class="text-base">Host</a></li>
+                </ul>
+            </nav>
+
+            <button type="button" class="flex items-center btn-primary font-semibold gap-1 transition-all">Subscribe <img src="assets/arrow-right.svg" alt="Arrow Right"></button>
+        </div>
+    </header>
 </body>
 </html>
