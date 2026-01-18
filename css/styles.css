@@ -1,9 +1,16 @@
 :root {
     --purple: #1A0B2E;
+    --light-purple: #230E3D;
     --green: #00FF88;
 }
 .bg-purple {
     background: var(--purple);
+}
+.bg-purple-light {
+    background: var(--light-purple);
+}
+.color-green {
+    color: var(--green);
 }
 .font-inter {
     font-family: "Inter", sans-serif;
@@ -34,6 +41,11 @@
     border: 1px solid var(--green);
     color: var(--green);
 }
+.btn-primary.btn-primary_green:hover {
+    background-color: rgba(255,255,255,.1);
+}
+
+
 .container {
     max-width: 1200px;
     margin-left: auto;
@@ -70,4 +82,45 @@ nav ul li a:hover {
     position: absolute;
     top: 4px;
     left: 70%;
+}
+
+.about-top {
+    padding: 50px 0 80px;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+}
+.about-info-grid {
+    padding: 80px 0 120px;
+}
+
+.why-choose-techwave {
+    padding: 120px 0;
+}
+
+
+.grid-cards {
+    background: rgba(53, 17, 101, .4);
+    border-radius: 40px;
+    padding: 40px;
+}
+.grid-cards-long {
+    grid-row: span 2;
+    justify-content: center;
+}
+.grid-card-wide {
+    grid-column: span 2;
+}
+
+.featured-episodes {
+    padding: 120px 0;
+}
+.episode-video {
+    display: block;
+    padding-bottom: 56.25%;
+}
+.episode-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
