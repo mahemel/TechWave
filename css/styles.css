@@ -28,8 +28,16 @@
     background-size: 200% 200%;
     background-position: right top;
 }
+.btn-primary.btn-primary_green {
+    background: none;
+    background-color: transparent;
+    border: 1px solid var(--green);
+    color: var(--green);
+}
 .container {
     max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .navigation {
     border-bottom: 1px solid #412567;
@@ -39,4 +47,27 @@ nav ul li a {
 }
 nav ul li a:hover {
     color: rgba(251, 9, 180, 1);
+}
+
+
+.banner {
+    padding: 100px 0;
+    background: url(../assets/hero-bg.png) center center no-repeat;
+    background-size: cover;
+}
+.mic-container {
+    width: 350px;
+    height: 350px;
+    border: 8px solid #2A186C;
+    background: linear-gradient(45deg,rgba(247, 233, 63, 1) 15%, rgba(251, 9, 180, 1) 51%, rgba(145, 0, 248, 1) 82%);
+}
+.mic-container .new {
+    background: var(--green);
+    border-radius: 20px;
+    line-height: 1em;
+    padding: 10px 16px;
+    box-shadow: 0 3px 27px 0 rgba(0,255,136,.5);
+    position: absolute;
+    top: 4px;
+    left: 70%;
 }
