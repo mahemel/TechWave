@@ -20,8 +20,8 @@
         <div class="container mx-auto flex justify-between items-center">
             <a href="/index.html" class="w-[137px] md:w-[219px]"><img class="w-full" src="assets/logo.svg" alt="TechWave Logo"></a>
 
-            <nav>
-                <ul class="hidden md:flex gap-8 text-white font-medium">
+            <nav class="header-nav">
+                <ul class="flex gap-8 text-white font-medium">
                     <li><a href="#" class="text-base">About</a></li>
                     <li><a href="#" class="text-base">Episodes</a></li>
                     <li><a href="#" class="text-base">Host</a></li>
@@ -29,6 +29,8 @@
             </nav>
 
             <button type="button" class="flex items-center btn-primary font-semibold gap-1 transition-all">Subscribe <img src="assets/arrow-right.svg" alt="Arrow Right"></button>
+
+            <button class="visible-xs" type="button"><img src="assets/hamburger.svg" alt="Menu Icon"></button>
         </div>
     </header>
     <!-- End of Header -->
@@ -44,10 +46,10 @@
                 <div class="banner-content flex flex-col gap-6 text-center text-white">
                     <div class="banner-header flex flex-col gap-3">
                         <h1 class="font-extrabold text-6xl">TechWave</h1>
-                        <p class="text-base font-normal opacity-80">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+                        <p class="text-base font-normal opacity-80">Your daily dose of tech insights, productivity hacks,<br class="show-ipad"> and personal growth</p>
                     </div>
 
-                    <div class="btn-group flex flex-col md:flex-row gap-2 justify-center">
+                    <div class="btn-group flex flex-row gap-2 justify-center">
                         <a href="#" class="flex items-center btn-primary font-semibold gap-2 transition-all"><img src="assets/spotify.svg" alt="Arrow Right"> Listen on Spotify</a>
                         <button type="button" class="flex items-center btn-primary btn-primary_green font-semibold gap-2 transition-all"><img src="assets/message.svg" alt="Arrow Right"> Subscribe </button>
 
@@ -63,16 +65,15 @@
                     <h2 class="text-5xl font-bold">About the Podcast</h2>
 
                     <p class="text-base/relaxed opacity-80">
-                        TechWave is your go-to podcast for staying ahead in the fast-paced world of technology.<br>
-                        We break down complex topics into digestible insights, explore productivity strategies that actually work,<br>
+                        TechWave is your go-to podcast for staying ahead in the fast-paced world of technology.<br class="hide-ipad">
+                        We break down complex topics into digestible insights, explore productivity strategies that actually work,<br class="hide-ipad">
                         and share stories of personal growth from industry leaders.
-                        <br><br>
-
-                        Join thousands of young professionals and tech enthusiasts who start their day with TechWave.
                     </p>
+
+                    <p class="text-base/relaxed opacity-80 m-0 md:mt-2">Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
                 </div>
 
-                <div class="about-info-grid grid grid-cols-2 gap-10 md:gap-0 md:grid-cols-4 justify-between">
+                <div class="about-info-grid grid grid-cols-2 gap-10 md:gap-0 md:grid-cols-4 justify-around">
                     <div class="flex flex-col gap-4">
                         <h3 class="color-green font-black text-5xl">150K+</h3>
                         <p class="text-base/relaxed opacity-80 text-white uppercase">Monthly Listeners</p>
@@ -103,7 +104,7 @@
 
                 <div class="feature-grid grid grid-cols-3 gap-[30px]">
                     <div class="grid-cards grid-cards-long flex flex-col gap-4">
-                        <img class="w-15" src="assets/headphone.png" alt="headphone">
+                        <img class="w-15" src="assets/headphones.svg" alt="headphone">
 
                         <h3 class="text-white font-bold text-2xl">Premium Audio Quality</h3>
 
@@ -111,7 +112,7 @@
                     </div>
 
                     <div class="grid-cards grid-card-wide flex flex-col gap-4">
-                        <img class="w-15" src="assets/device.png" alt="device">
+                        <img class="w-15" src="assets/phone.svg" alt="device">
 
                         <h3 class="text-white font-bold text-2xl">Mobile Friendly</h3>
 
@@ -119,7 +120,7 @@
                     </div>
 
                     <div class="grid-cards grid-card-wide flex flex-col gap-4">
-                        <img class="w-15" src="assets/location.png" alt="location">
+                        <img class="w-15" src="assets/globe.svg" alt="location">
 
                         <h3 class="text-white font-bold text-2xl">Global Community</h3>
 
@@ -127,7 +128,7 @@
                     </div>
 
                     <div class="grid-cards grid-card-wide flex flex-col gap-4">
-                        <img class="w-15" src="assets/zap-fast.png" alt="zap-fast">
+                        <img class="w-15" src="assets/zap-fast.svg" alt="zap-fast">
 
                         <h3 class="text-white font-bold text-2xl">Exclusive Interviews</h3>
 
@@ -135,7 +136,7 @@
                     </div>
 
                     <div class="grid-cards flex flex-col gap-4">
-                        <img class="w-15" src="assets/resource.png" alt="resource">
+                        <img class="w-15" src="assets/book.svg" alt="resource">
 
                         <h3 class="text-white font-bold text-2xl">Rich Resources</h3>
 
@@ -154,7 +155,7 @@
 
                     <div class="episode-card rounded-3xl overflow-hidden">
                         <div class="episode-video relative">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/MPXXmeW7dHI?si=kLyZin29jNpe09ps" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/MPXXmeW7dHI?si=kLyZin29jNpe09ps&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img{position:absolute;width:100%;top:0;bottom:0;margin:auto;transition:transform 300ms;}img:hover{transform: scale(1.05)}</style><a href='https://www.youtube.com/embed/MPXXmeW7dHI?si=kLyZin29jNpe09ps&autoplay=1'><img src='assets/video-1.jpg'></a>"></iframe>
                         </div>
 
                         <div class="episode-card-content p-6 bg-purple-light">
@@ -162,7 +163,7 @@
                                 <h3 class="text-white font-bold text-2xl">The Future of AI in Everyday Life</h3>
                                 <p class="text-white text-base opacity-60">Exploring how artificial intelligence is transforming our daily routines and what to expect in the next decade.</p>
 
-                                <div class="timer flex items-center gap-[6px]">
+                                <div class="timer flex items-center gap-1.5">
                                     <img src="assets/clock.svg" alt="clock icon">
                                     <span class="color-green text-base">42 min</span>
                                 </div>
@@ -172,7 +173,7 @@
                     
                     <div class="episode-card rounded-3xl overflow-hidden">
                         <div class="episode-video relative">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/muBBYZXYgoM?si=T5dPrZ__DZO9L0G8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/muBBYZXYgoM?si=T5dPrZ__DZO9L0G8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img{position:absolute;width:100%;top:0;bottom:0;margin:auto;transition:transform 300ms;}img:hover{transform: scale(1.05)}</style><a href='https://www.youtube.com/embed/muBBYZXYgoM?si=T5dPrZ__DZO9L0G8&autoplay=1'><img src='assets/video-2.jpg'></a>"></iframe>
                         </div>
 
                         <div class="episode-card-content p-6 bg-purple-light">
@@ -180,7 +181,7 @@
                                 <h3 class="text-white font-bold text-2xl">Building Better Habits for Remote Work</h3>
                                 <p class="text-white text-base opacity-60">Practical strategies for staying productive and maintaining work-life balance in a remote environment.</p>
 
-                                <div class="timer flex items-center gap-[6px]">
+                                <div class="timer flex items-center gap-1.5">
                                     <img src="assets/clock.svg" alt="clock icon">
                                     <span class="color-green text-base">35 min</span>
                                 </div>
@@ -190,7 +191,7 @@
                     
                     <div class="episode-card rounded-3xl overflow-hidden">
                         <div class="episode-video relative">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/uudNhqHcs6o?si=Fps6q7WqWVKpHEsQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/uudNhqHcs6o?si=Fps6q7WqWVKpHEsQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img{position:absolute;width:100%;top:0;bottom:0;margin:auto;transition:transform 300ms;}img:hover{transform: scale(1.05)}</style><a href='https://www.youtube.com/embed/uudNhqHcs6o?si=Fps6q7WqWVKpHEsQ&autoplay=1'><img src='assets/video-3.jpg'></a>"></iframe>
                         </div>
 
                         <div class="episode-card-content p-6 bg-purple-light">
@@ -198,7 +199,7 @@
                                 <h3 class="text-white font-bold text-2xl">Career Growth in Tech: A Roadmap</h3>
                                 <p class="text-white text-base opacity-60">Expert advice on navigating your tech career from junior developer to senior leadership roles.</p>
 
-                                <div class="timer flex items-center gap-[6px]">
+                                <div class="timer flex items-center gap-1.5">
                                     <img src="assets/clock.svg" alt="clock icon">
                                     <span class="color-green text-base">51 min</span>
                                 </div>
@@ -216,11 +217,11 @@
             <div class="container flex flex-col gap-10 justify-center">
                 <h2 class="text-5xl font-bold text-center text-white">Meet the Host</h2>
 
-                <div class="host-detail bg-purple-light rounded-3xl p-10 flex flex-col justify-center md:items-center md:flex-row md:justify-between gap-6">
+                <div class="host-detail rounded-3xl p-10 flex items-center justify-between gap-6">
                     <img src="assets/host.png" alt="host">
 
                     <div class="host-content flex flex-col gap-4">
-                        <h3 class="text-white font-bold text-[32px]">Alex Kumar</h3>
+                        <h3 class="text-white font-bold text-[32px] leading-tight">Alex Kumar</h3>
                         <p class="text-white text-base opacity-60">Tech entrepreneur, productivity expert, and lifelong learner. Alex has been in the tech industry for over 10 years, working with startups and Fortune 500 companies. Through TechWave, Alex shares insights from industry leaders and practical advice for anyone looking to grow in tech.</p>
 
                         <ul class="flex gap-2">

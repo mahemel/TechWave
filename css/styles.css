@@ -45,7 +45,12 @@
 .btn-primary.btn-primary_green:hover {
     background-color: rgba(255,255,255,.1);
 }
-
+.show-ipad {
+    display: none;
+}
+.visible-xs {
+    display: none;
+}
 
 .container {
     max-width: 1200px;
@@ -62,9 +67,15 @@ nav ul li a:hover {
     color: rgba(251, 9, 180, 1);
 }
 
+main section {
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
+/* ---- Banner ---- */
 .banner {
-    padding: 100px 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
     background: url(../assets/hero-bg.png) center center no-repeat;
     background-size: cover;
 }
@@ -84,20 +95,28 @@ nav ul li a:hover {
     top: 4px;
     left: 70%;
 }
+.btn-group .btn-primary {
+    padding: 0 22px;
+}
+/* ---- Banner ---- */
 
+/* ---- About ---- */
 .about-top {
-    padding: 50px 0 80px;
+    padding-top: 50px;
+    padding-bottom: 80px;
     border-bottom: 1px solid rgba(255,255,255,.1);
 }
 .about-info-grid {
-    padding: 80px 0 120px;
+    padding-top: 80px;
+    padding-bottom: 120px;
 }
+/* ---- About ---- */
 
+/* ---- Why Choose TechWave ---- */
 .why-choose-techwave {
-    padding: 120px 0;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
-
-
 .grid-cards {
     background: rgba(53, 17, 101, .4);
     border-radius: 40px;
@@ -110,16 +129,13 @@ nav ul li a:hover {
 .grid-card-wide {
     grid-column: span 2;
 }
+/* ---- Why Choose TechWave ---- */
 
+/* ---- Featured Episodes ---- */
 .featured-episodes {
-    padding: 120px 0;
-}
-.meet-the-host {
+    padding-top: 120px;
     padding-bottom: 120px;
 }
-
-
-
 .episode-video {
     display: block;
     padding-bottom: 56.25%;
@@ -131,8 +147,15 @@ nav ul li a:hover {
     width: 100%;
     height: 100%;
 }
+/* ---- Featured Episodes ---- */
 
-
+/* ---- Meet the host ---- */
+.meet-the-host {
+    padding-bottom: 120px;
+}
+.host-detail {
+    background: rgba(53, 17, 101, .4);
+}
 .host-content li a {
     width: 40px;
     height: 40px;
@@ -148,9 +171,230 @@ nav ul li a:hover {
 .host-content li:nth-child(2) img {
     width: 16px;
 }
+/* ---- Meet the host ---- */
 
+/* ---- Footer ---- */
 .footer {
     padding: 120px 0;
     background: url('../assets/footer-bg.png') center center no-repeat;
     background-size: cover;
+}
+/* ---- Footer ---- */
+@media screen and (max-width: 992px) {
+.hide-ipad {
+    display: none;
+}
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+.show-ipad {
+    display: block;
+}
+.banner {
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.banner .container {
+    gap: 30px;
+}
+.mic-container {
+    width: 204px;
+    height: 204px;
+}
+.mic-container img {
+    width: 70px;
+}
+.banner-header h1 {
+    font-size: 46px
+}
+
+.mic-container .new {
+    border-radius: 15px;
+    padding: 6px 10px;
+    top: 3px;
+    left: 70%;
+    font-size: 14px;
+}
+
+h2 {
+    font-size: 40px;
+}
+.about-top {
+    padding-top: 30px;
+    padding-bottom: 47px;
+}
+.about-info-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding-top: 47px;
+    padding-bottom: 70px;
+}
+.why-choose-techwave {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.feature-grid,
+.episode-grid {
+    grid-template-columns: 1fr;
+}
+.grid-cards-long {
+    grid-row: span 1;
+}
+.grid-card-wide {
+    grid-column: span 1;
+}
+.featured-episodes {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.meet-the-host {
+    padding-bottom: 70px;
+}
+.host-detail {
+    align-items: flex-start;
+}
+.footer {
+    padding: 70px 0;
+}
+}
+
+@media screen and (max-width: 576px) {
+.visible-xs {
+    display: block;
+}
+.navigation .header-nav,
+.navigation .btn-primary {
+    display: none;
+}
+section.banner {
+    padding-left: 0;
+    padding-right: 0;
+}
+.banner {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-image: url('../assets/hero-bg-mob.png');
+}
+.banner .container {
+    gap: 24px;
+}
+.mic-container {
+    width: 200px;
+    height: 200px;
+}
+.mic-container img {
+    width: 47px;
+}
+.banner-header {
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 8px;
+}
+.banner-header h1 {
+    font-size: 40px;
+    line-height: 1.2em;
+}
+.mic-container .new {
+    border-radius: 17px;
+    padding: 10px 16px;
+    top: 2px;
+    font-size: 16px;
+}
+.btn-group .btn-primary {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+h2 {
+    font-size: 32px;
+}
+.about-top {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    gap: 16px;
+}
+.about-info-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.about-info-grid h3 {
+    font-size: 40px;
+}
+.why-choose-techwave {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.why-choose-techwave .container,
+.meet-the-host .container {
+    gap: 24px;
+}
+.feature-grid {
+    gap: 16px;
+}
+.grid-cards {
+    background: rgba(53, 17, 101, .4);
+    border-radius: 40px;
+    padding: 24px;
+}
+.grid-cards h3 {
+    font-size: 22px;
+}
+.feature-grid,
+.episode-grid {
+    grid-template-columns: 1fr;
+}
+.episode-grid {
+    gap: 16px;
+}
+.episode-card-content {
+    padding: 16px;
+}
+.episode-card-content h3 {
+    font-size: 20px;
+}
+.episode-card-content > .flex {
+    gap: 8px;
+}
+.grid-cards-long {
+    grid-row: span 1;
+}
+.grid-card-wide {
+    grid-column: span 1;
+}
+.featured-episodes {
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+.meet-the-host {
+    padding-bottom: 40px;
+}
+.host-detail {
+    padding: 24px;
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+}
+.host-detail > img {
+    width: 150px;
+}
+.host-content ul {
+    justify-content: center;
+}
+.host-content h3 {
+    font-size: 24px;
+}
+.footer {
+    padding: 40px 0;
+    background-image: url('../assets/footer-bg-mob.png');
+}  
+.footer .container {
+    gap: 24px;
+}
+.footer ul {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    width: 260px;
+}  
 }
