@@ -179,6 +179,9 @@ main section {
     background: url('../assets/footer-bg.png') center center no-repeat;
     background-size: cover;
 }
+.footer ul li a:hover span{
+    opacity: 1;
+}
 /* ---- Footer ---- */
 @media screen and (max-width: 992px) {
 .hide-ipad {
